@@ -1,0 +1,74 @@
+.book-page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blockquote {
+font-style: italic;
+font-weight: bold;
+}
+
+
+li {
+  color: rgb(26, 29, 26);
+}
+
+#heading-1 {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+li.green-text {
+  text-decoration: underline;
+}
+
+.wrapper {
+  color: brown;
+}
+
+.text {
+  text-decoration: underline;
+  color: red;
+}
+
+
+.title {
+  color: #446fb1;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.text {
+  text-indent: 50px;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.items {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.link {
+  color: blue;
+}
+
+.link:hover {
+  color: rgb(93, 208, 216);
+  text-decoration: none;
+}
+
+.link:visited {
+  color:blueviolet
+}
+
+.link:active {
+  text-transform: uppercase;
+}

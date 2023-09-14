@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work with forms</title>
+</head>
+<body>
+
+  <form action="/forms.html" method="get">
+    <label>
+    User <input 
+      type="text"
+      required
+      name="user" 
+      placeholder="Enter the user name" /><br />
+  </label>
+
+  <label for="form-password">Password</label>
+    <input 
+    id="form-password"
+    type="password" 
+    name="password" 
+    placeholder="Enter the password" /><br />
+   
+    <textarea name="comment" rows="10" cols="40">
+    </textarea><br /> 
+    <br />
+    
+    <label for="form-checkbox">Keep logging in</label> 
+    <input type="checkbox" id="form-checkbox" />
+
+    <br />
+    <br />
+
+    <select name="type" size="3" multiple>
+      <option value="type_1">Type 1</option>
+      <option value="type_2">Type 2</option>
+      <option value="type_3">Type 3</option>
+    </select><br />
+    
+    <input type="submit" value="Login" />
+    <br />
+
+    <h1>Payment form</h1>
+
+
+    <fieldset>
+      <legend>Payment form</legend>
+
+      <label>
+        Card Number
+        <input 
+        type="text" 
+        required
+        maxlength="19"
+        minlength="16"
+        name="card-number" />
+      </label>
+      <br />
+      <br />
+
+      <label>
+        Expiration month
+        <select
+        required
+        name="expiration-month">
+        <option></option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </label>
+
+      <label>
+        Expiration year
+        <select 
+        required
+        name="expiration-year">
+        <option></option>
+          <option value="22">2022</option>
+          <option value="23">2023</option>
+          <option value="24">2024</option>
+          <option value="25">2025</option>
+          <option value="26">2026</option>
+        </select>
+      </label>
+      <br />
+      <br />
+
+      <label>
+        Cardholder Name
+        <input
+        required
+        name="name"
+        type="text"
+      </label>
+
+      <br /><br />
+
+      <label>
+        CVV
+        <input
+        minlength="3"
+        maxlength="3"
+        required
+        name="name"
+        type="text"
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Shipping</legend>
+      <label>
+        NP
+        <input type="radio" name="shipping" value="NP" />
+      </label>
+      <br />
+
+      <label>
+        Meest express
+        <input type="radio" name="shipping" value="meest" />
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>User info</legend>
+      <label for="payment-email">Send receipt to the Email:</label>
+      <input id="payment-email" type="email" name="email" />
+
+      <br />
+      <label for="payment-comment">Comment for the order:</label>
+      <br />
+      <textarea 
+      rows="10"
+      cols="50"
+      id="payment-comment" 
+      name="payment-comment"></textarea>
+
+    </fieldset>
+
+    <br />
+
+    <label>
+      <input type="checkbox" name="do-not-call" checked />
+      Do not call me back
+    </label>
+
+    <br />
+
+    <a href="https://test.com/terms-of-service">Terms of service</a>
+    <br />
+
+    <input type="submit" value="Pay" />
+
+  </form>
+  
+</body>
+</html>
